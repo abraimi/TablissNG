@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import { GitHubCalendar } from "react-github-calendar";
-import type { Activity } from "react-activity-calendar";
 import { useIntl } from "react-intl";
 import "./GitHub.sass";
 import { useFormatMessages } from "../../../hooks/useFormatMessages";
@@ -88,7 +87,7 @@ const GitHubCalendarWidget: FC<Props> = ({ data = defaultData }) => {
           data.showTooltips
             ? {
                 activity: {
-                  text: (activity: Activity) => {
+                  text: (activity) => {
                     if (activity.count === 0) {
                       return intl.formatMessage(tooltipMessages.noActivity, {
                         date: activity.date,
