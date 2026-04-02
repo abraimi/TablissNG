@@ -112,6 +112,7 @@ const config = {
       UNSPLASH_API_KEY: JSON.stringify(process.env.UNSPLASH_API_KEY),
       NASA_API_KEY: JSON.stringify(process.env.NASA_API_KEY),
       TRELLO_API_KEY: JSON.stringify(process.env.TRELLO_API_KEY),
+      WALLHAVEN_API_KEY: JSON.stringify(process.env.WALLHAVEN_API_KEY),
     }),
   ],
   devtool: isWeb || !isProduction ? "source-map" : false,

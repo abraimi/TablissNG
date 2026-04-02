@@ -1,3 +1,15 @@
 {
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "workbench.colorCustomizations": {
+    "[Default Dark+]": {
+      "editor.lineHighlightBackground": "#404020FF",
+      "editorLineNumber.activeForeground": "#ffff00"
+    },
+    "[Default Light+]": {
+      "editor.lineHighlightBackground": "#FFEEEE",
+      "editorLineNumber.activeForeground": "#ff0000"
+    },
+    "minimap.background": "#00000000",
+    "scrollbar.shadow": "#00000000"
+  }
 }
