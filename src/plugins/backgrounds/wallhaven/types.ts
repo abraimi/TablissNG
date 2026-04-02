@@ -29,7 +29,6 @@ type TopRange = "1d" | "3d" | "1w" | "1M" | "3M" | "6M" | "1y";
 
 type WidthXheight = `${number}x${number}`;
 
-type Colors = `#${string}`;
 /*
   The seed requires the following requirements: [a-zA-Z0-9]{6}
   And it's used to get random results.
@@ -43,7 +42,7 @@ interface WallhavenFetchOptions {
   atleast: WidthXheight;
   resolutions: WidthXheight[];
   ratios: WidthXheight[];
-  colors: Colors[];
+  colors: string[];
   page: number;
   seed: string;
 }
@@ -70,7 +69,7 @@ const defaultData: WallhavenFetchOptions = {
   seed: "",
 };
 
-interface ReturnTypes {
+interface ImagesData {
   id: string;
   url: string;
   short_url: string;
@@ -86,12 +85,24 @@ interface ReturnTypes {
   file_size: number;
   file_type: string;
   created_at: string;
-  colors: Colors[];
+  colors: string[];
   path: string;
   thumbs: {
     large: string;
     original: string;
     small: string;
+  };
+}
+
+interface ReturnTypes {
+  data: ImagesData[];
+  meta: {
+    current_page: number;
+    last_page: number;
+    per_page: number;
+    total: number;
+    query: string | null;
+    seed: string | null;
   };
 }
 
