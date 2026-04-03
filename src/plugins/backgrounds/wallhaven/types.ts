@@ -106,8 +106,11 @@ interface ReturnTypes {
   };
 }
 
+// interface Props {}
+
 export {
   type WallhavenFetchOptions,
   type ReturnTypes,
+  // type Props,
   defaultData as wallhavenDefaultData,
 };

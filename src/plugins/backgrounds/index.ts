@@ -7,6 +7,7 @@ import online from "./online";
 import unsplash from "./unsplash";
 import wikimedia from "./wikimedia";
 import bing from "./bing";
+import wallhaven from "./wallhaven";
 
 export const backgroundConfigs = [
   apod,
@@ -18,4 +19,5 @@ export const backgroundConfigs = [
   unsplash,
   bing,
   wikimedia,
+  wallhaven,
 ];
